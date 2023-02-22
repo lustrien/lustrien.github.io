@@ -1,0 +1,903 @@
+.gael-combat {
+    width: 620px !important;
+    margin: 0px auto;
+    border: 1px solid rgba(var(--bordercolor) / 70%);
+    --glacies: url(https://img.nickpic.host/6JmSR2.png);
+    --jats: url(https://img.nickpic.host/CWTJdP.png);
+    --flowers: url(https://i.ibb.co/JsYR8Cq/mem-search-bg.png);
+    --namegradient: linear-gradient(30deg, var(--highlightRGB)),
+        var(--highlighterRGB);
+    --bagaccent: rgb(var(--highlightRGB));
+    --hollowing: url(https://img.nickpic.host/QoxFr8.png);
+}
+
+.gaelcombat-header {
+    background: var(--hollowing);
+    background-size: cover;
+    height: 160px;
+    border-bottom: 1px solid rgba(var(--bordercolor));
+}
+
+.gaelcombat-name {
+    position: absolute;
+    order: 1;
+    font: 500 72px var(--displayfont);
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-align: left;
+    mix-blend-mode: screen;
+    opacity: 0.7;
+    margin-left: 490px;
+    padding: 106px 0 0 8px;
+    z-index: 3;
+}
+
+/* Highlight Gradient Text Overlay*/
+
+.gaelcombat-name,
+.gaelcombat-level b,
+.gaelcombat-stat b,
+.gaelcombat-feattitle,
+.gaelcombat-actionh2 {
+    background: linear-gradient(0deg,
+            rgba(var(--highlightRGB), 1) 30%,
+            rgba(var(--highlighterRGB), 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0px;
+}
+
+/*Level d20 backrgound*/
+
+.gaelcombat-hex {
+    position: relative;
+    float: right;
+    font-size: 178px;
+    line-height: 80%;
+    color: rgba(var(--devcolor) / 40%);
+    z-index: 1;
+    rotate: 28deg;
+    margin-left: 500px;
+    margin-bottom: -150px;
+    top: -50px;
+    left: 40px;
+    overflow: clip;
+}
+
+/*Section 1*/
+
+.gaelcombat-block {
+    /*Container*/
+    border-bottom: 0px solid rgba(var(--bordercolor));
+    height: 160px;
+    width: 620px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(55deg, rgba(var(--highlightRGB), 0.1) 0%, rgba(var(--highlightRGB), 0) 90%);
+}
+
+.gaelcombat-block::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: var(--flowers);
+    background-size: cover;
+    z-index: 0;
+}
+
+/*Top Row with Ability Modifiers*/
+
+.gaelcombat-statstop {
+    display: grid;
+    grid-template-columns: 520px 20px 80px;
+    grid-template-rows: 84px;
+}
+
+.gaelcombat-cstats {
+    /*Stat Row*/
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 470px;
+    margin: 20px;
+    order: 1;
+    column-gap: 30px;
+}
+
+/*Stats*/
+.gaelcombat-stat {
+    width: 50px;
+    height: auto;
+    background: rgb(var(--devcolor) / 50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    box-shadow: 0 3px 5px rgb(var(--devcolor) / 70%);
+}
+
+.gaelcombat-stat span {
+    font: 500 12px var(--titlefont);
+    text-transform: uppercase;
+    color: rgb(var(--textcolor));
+    margin: auto;
+    padding: 6px 6px 3px 6px;
+}
+
+.gaelcombat-stat b {
+    font: 600 26px var(--bodyserif);
+    text-transform: uppercase;
+    padding: 4px;
+    margin: auto;
+    line-height: 60%;
+}
+
+/*Level*/
+.gaelcombat-level {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 11px 10px 0 20px;
+    z-index: 2;
+}
+
+.gaelcombat-level span {
+    font: 400 13px var(--titlefont);
+    color: rgba(var(--textcolor));
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+.gaelcombat-level i {
+    font-family: var(--serif);
+    font-size: 40px;
+    padding-left: 30px;
+    line-height: 80%;
+}
+
+/*Bottom Row with HP and Misc*/
+
+.gaelcombat-statsbottom {
+    /*Grid Container*/
+    display: grid;
+    grid-template-columns: 40px 460px 20px 20px 80px;
+    grid-template-rows: 20px 30px 30px;
+}
+
+/*HP Bar*/
+.gaelcombat-hp {
+    /*Background Container*/
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    height: 11px;
+    border: 1px solid rgb(var(--bordercolor));
+    border-radius: 4px;
+    background-color: rgba(var(--devcolor)/70%);
+    width: 450px;
+    margin: 4px 0px 0 40px;
+    box-shadow: 0 3px 5px rgb(var(--devcolor) / 10%);
+    z-index: 1;
+}
+
+.gaelcombat-hptext {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    display: flex;
+    font: 400 13px var(--titlefont);
+    text-transform: uppercase;
+    color: rgb(var(--textcolor));
+    line-height: 120%;
+    width: 120px;
+    padding-top: 4px;
+}
+
+.gaelcombat-hpcurrent {
+    font-weight: 600;
+    color: rgb(var(--highlightRGB));
+}
+
+.gaelcombat-hptotal:before {
+    content: "/ ";
+    padding-left: 4px;
+}
+
+.gaelcombat-hptotal:after {
+    content: "hp";
+    padding-left: 4px;
+}
+
+.gaelcombat-hpbar {
+    /*Colored Bar*/
+    height: 11px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right,
+            var(--highlight),
+            var(--highlighter));
+    width: 450px;
+}
+
+/*AC Icon over HP*/
+.gaelcombat-ac {
+    /*Main*/
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    font: 15px var(--titlefont);
+    color: rgb(var(--textcolor));
+    left: 18px;
+}
+
+.gaelcombat-ac i {
+    /*Icon*/
+    color: var(--highlight);
+    line-height: 70%;
+    font-size: 30px;
+    z-index: 2;
+    text-align: center;
+}
+
+.gaelcombat-ac span {
+    /*Text*/
+    text-align: center;
+    color: rgba(255 255 255 / 0.75);
+    margin-top: 4px;
+    z-index: 3;
+}
+
+/*Initiative*/
+.gaelcombat-init {
+    /*Main*/
+    display: inline-flex;
+    justify-content: flex-end;
+    order: 1;
+    grid-column: 3 / 2;
+    grid-row: 2 / 4;
+    margin: 14px 8px 0px 0px;
+}
+
+.gaelcombat-init span {
+    /*Text*/
+    display: inline-flex;
+    background: rgb(var(--devcolor) / 20%);
+    height: 18px;
+    padding: 5px 5px 0px 5px;
+    border-radius: 2px;
+    font: 600 14px var(--titlefont);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(var(--textcolor));
+    border: 1px solid rgb(var(--bordercolor)/70%)
+}
+
+.gaelcombat-init i {
+    /*Icon*/
+    display: flex;
+    color: var(--highlight);
+    padding-right: 4px;
+}
+
+/*Proficiency Bonus*/
+.gaelcombat-pb {
+    /*Main*/
+    display: inline-flex;
+    justify-content: flex-end;
+    order: 3;
+    grid-column: 6 / 3;
+    grid-row: 2 / 4;
+    margin: 14px 20px 0px 0px;
+}
+
+.gaelcombat-pb span {
+    /*Text*/
+    display: flex;
+    background: rgb(var(--devcolor) / 30%);
+    height: 18px;
+    padding: 5px 5px 0px 5px;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    border-radius: 2px;
+    font: 400 14px var(--titlefont);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(var(--textcolor));
+}
+
+.gaelcombat-pb i {
+    /*Icon*/
+    color: var(--highlight);
+    padding-right: 4px;
+}
+
+/*Speed*/
+.gaelcombat-sp {
+    /*Main*/
+    display: inline-flex;
+    justify-content: flex-end;
+    order: 2;
+    grid-column: 6 / 2;
+    grid-row: 2 / 4;
+    margin: 14px 72px 0px 0px;
+}
+
+.gaelcombat-sp span {
+    /*Text*/
+    background: rgb(var(--devcolor) / 30%);
+    height: 18px;
+    padding: 5px 5px 0px 5px;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    border-radius: 2px;
+    font: 400 14px var(--titlefont);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(var(--textcolor));
+}
+
+.gaelcombat-sp i {
+    /*Icon*/
+    color: var(--highlight);
+    padding-right: 4px;
+}
+
+.gaelcombat-conditions {
+    /*Conditions Bar*/
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 18px;
+}
+
+.gaelcombat-status {
+    /*Icons*/
+    display: flex;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    font: 600 10px var(--titlefont);
+    color: rgb(var(--textcolor));
+    text-transform: uppercase;
+    background: var(--statusicon);
+    background-size: cover;
+}
+
+/*Defining Conditions/Status Effects. Plug this ID into the HTML. */
+
+#bleeding {
+    --statusicon: url(https://img.nickpic.host/QIq2r2.png);
+}
+
+#burning {
+    --statusicon: url(https://img.nickpic.host/QIqP7m.png);
+}
+
+#charmed {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/charmed_icon_baldurs_gate_3_wiki_guide_64px.png);
+}
+
+#concentrating {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/icon_concentration_bg3_wiki_guide.png);
+}
+
+#dazed {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/dazed_icon_status_effect_baldurs_gate3_guide_64px.png);
+}
+
+#difficult-terrain {
+    --statusicon: url(https://img.nickpic.host/QIqNlJ.png);
+}
+
+#downed {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/downed_status_effect_baldursgate3_wiki_guide_64px.png);
+}
+
+#frightened {
+    --statusicon: url(https://img.nickpic.host/QIqVMn.png);
+}
+
+#gaping-wounds {
+    --statusicon: url(https://img.nickpic.host/QIqeVx.png);
+}
+
+#hastened {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/haste_spells_bg3_wiki_guide64px.png);
+}
+
+#hamstrung {
+    --statusicon: url(https://img.nickpic.host/QIq9QQ.png);
+}
+
+#off-balance {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/off_balance_status_effect_icon_baldurs_gate3_guide_64px.png);
+}
+
+#prone {
+    --statusicon: url(https://img.nickpic.host/QIqfks.png);
+}
+
+#sleeping {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/sleeping_status_effect_baldursgate3_wiki_guide_64px.png);
+}
+
+#surprised {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/surprised_status_effect_baldursgate3_wiki_guide_64px.png);
+}
+
+#threatened {
+    --statusicon: url(https://img.nickpic.host/QIqutD.png);
+}
+
+/*Post Content*/
+.gaelcombat-post {
+    /*Cointainer*/
+    position: relative;
+    background-image: url("https://i.ibb.co/hY7SGGL/profile1bg.png");
+    background-position: -20% top;
+    background-size: 140% auto;
+    background-repeat: no-repeat;
+    background-color: rgba(var(--devcolor) / 10%);
+    border-top: 1px solid rgb(var(--bordercolor) / 70%);
+    border-bottom: 1px solid rgb(var(--bordercolor)/70%);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.gaelcombat-text {
+    /*Post Text*/
+    font: 16px var(--bodyserif);
+    text-align: justify;
+    color: rgb(var(--textcolor));
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    padding: 30px;
+    background: rgba(var(--bordercolor) / 5%);
+}
+
+.gaelcombat-text b {
+    /*Speech*/
+    color: var(--highlight);
+}
+
+/*Italics? Combat Log?*/
+.gaelcombat-text span {
+    border-left: 3px solid rgb(var(--highlightRGB));
+    width: 100%;
+    padding-left: 6px;
+    font-style: italic;
+}
+
+/*Bag of Holding*/
+.gaelcombat-bottom {
+    max-width: 620px;
+    height: 300px;
+    background: rgba(var(--devcolor)/10%);
+}
+
+.gaelcombat-block2 {
+    display: grid;
+    padding: 20px;
+    background: rgba(var(--devcolor)/10%);
+    grid-template-columns: 100px 480px;
+    grid-template-rows: 50.5px 50.5px 50.5px 50.5px;
+    gap: 0px 0px;
+    grid-template-areas:
+        "gaelcombat-tabs gaelcombat-content"
+        "gaelcombat-tabs gaelcombat-content"
+        "gaelcombat-tabs gaelcombat-content"
+        "gaelcombat-tabs gaelcombat-content";
+
+}
+
+.gaelcombat-content {
+    height: 200px;
+    width: 480px;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    border-left: 0px;
+    z-index: 1;
+}
+
+.gaelcombat-content>div {
+    display: none;
+}
+
+.gaelcombat-content>div.gaeltab-open {
+    display: grid;
+}
+
+/*Sidebar Tabs*/
+
+.gaelcombat-tabs {
+    grid-area: gaelcombat-tabs;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    background-repeat: repeat;
+    background-image: var(--flowers);
+    z-index: 1;
+}
+
+.gaelcombat-tabs div {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    font: 500 14px var(--serif);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: rgba(var(--textcolor));
+    justify-content: center;
+    line-height: 340%;
+    cursor: pointer;
+}
+
+.gaelcombat-tab1,
+.gaelcombat-tab2,
+.gaelcombat-tab3 {
+    border-bottom: 1px solid rgb(var(--bordercolor)/70%);
+}
+
+/*Button Active*/
+.gaelcombat-tabs>.gaeltab-open {
+    font-weight: 600;
+    color: rgba(var(--highlightRGB));
+    background: linear-gradient(0deg, rgba(var(--highlightRGB), 0.05) 10%, rgba(var(--highlightRGB), 0.05) 10%);
+
+}
+
+.gaelcombat-tabs>div:hover {
+    color: rgba(var(--highlightRGB));
+    font-weight: 500;
+}
+
+/*Actions Section*/
+.gaelcombat-actions {
+    color: rgb(var(--textcolor));
+    display: block;
+    font: 16px var(--bodyserif);
+    line-height: 130%;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    height: 165px;
+    margin: 10px;
+    padding: 3px 10px 10px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    background: rgba(var(--bordercolor) / 5%);
+}
+
+.gaelcombat-actions span {
+    font-style: italic;
+}
+
+.gaelcombat-action {
+    padding-top: 10px;
+}
+
+.gaelcombat-actionh1 {
+    font: 600 10px var(--titlefont);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.gaelcombat-actionh2 {
+    font: 600 22px var(--serif);
+    text-transform: lowercase;
+    letter-spacing: 0;
+    line-height: 90%;
+    margin-bottom: 8px;
+}
+
+.gaelcombat-roll {
+    display: inline-block !important;
+    flex-direction: row;
+    width: fit-content;
+    font: 700 11px var(--titlefont);
+    text-transform: uppercase;
+    color: rgba(var(--highlightRGB));
+    border: 1px solid rgb(var(--bordercolor)/50%);
+    border-radius: 2px;
+    padding: 5px 5px 2px 5px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+}
+
+.gaelcombat-rollnumber {
+    display: inline-block !important;
+    flex-direction: row;
+    width: fit-content;
+    font: 400 11px var(--titlefont);
+    text-transform: uppercase;
+    color: rgba(var(--textcolor));
+    border: 1px solid rgb(var(--bordercolor)/50%);
+    border-radius: 2px;
+    padding: 5px 5px 2px 5px;
+    margin-bottom: 6px;
+}
+
+
+.gaelcombat-features {
+    display: block;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    height: 165px;
+    margin: 10px;
+    padding: 3px 10px 10px 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    background: rgba(var(--bordercolor) / 5%);
+}
+
+.gaelcombat-feat1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.gaelcombat-feattitle {
+    font: 700 25px var(--serif);
+    text-transform: lowercase;
+    padding-bottom: 3px;
+}
+
+.gaelcombat-feattag {
+    display: flex;
+    align-tiems: flex-start;
+    display: inline;
+    font: 400 10px var(--titlefont);
+    color: rgb(var(--textcolor));
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgb(var(--devcolor) / 20%);
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    border-radius: 2px;
+    padding: 0px 4px 4px 4px;
+    width: fit-content;
+    line-height: 70%;
+}
+
+.gaelcombat-feat1 span {
+    font: 16px var(--bodyserif);
+    padding-top: 6px;
+    color: rgb(var(--textcolor));
+    line-height: 130%;
+}
+
+.gaelcombat-equipment {
+    display: block;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    height: 178px;
+    margin: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+    background: rgba(var(--bordercolor) / 5%);
+}
+
+.gaelcombat-equiplist {
+    display: flex;
+    flex-direction: column;
+    font: 16px var(--bodyserif);
+    color: rgb(var(--textcolor));
+    line-height: 130%;
+    padding: 10px 0px 6px 10px;
+}
+
+.gaelcombat-item {
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+
+.gaelcombat-item:before {
+    content: "";
+    float: left;
+    height: 32px;
+    width: 32px;
+    background: var(--itemicon);
+    background-size: cover;
+}
+
+#mordul {
+    --itemicon: url(https://img.nickpic.host/C3Sw4J.png);
+}
+
+#armor {
+    --itemicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/drow_studded_leather_armour_chest_armor_baldursgate3_wiki_guide_150px.png);
+}
+
+#longbow {
+    --itemicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/longbow_weapons_baldursgate3_wiki_guide_150px.png);
+}
+
+#dagger {
+    --itemicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/dagger_weapons_baldursgate3_wiki_guide_150px.png);
+}
+
+#sickle {
+    --itemicon: url(https://img.nickpic.host/C0Z5oX.png);
+}
+
+#whip {
+    --itemicon: url(https://img.nickpic.host/6Zk9IJ.png);
+}
+
+#sling {
+    --itemicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/sling_weapons_bg3_wiki_guide_150px.png);
+}
+
+#obsidian {
+    --itemicon: url(https://img.nickpic.host/C9Teas.png);
+}
+
+#pack {
+    --itemicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/backpack_item_baldursgate3_wiki_guide_150px.png)
+}
+
+.gaelcombat-item b {
+    display: flex;
+    order: 2;
+    font: 600 16px var(--serif);
+    color: rgba(var(--highlightRGB));
+    text-transform: lowercase;
+    letter-spacing: 0;
+    padding-left: 20px;
+    line-height: 70%;
+}
+
+.gaelcombat-itemtag {
+    margin-left: 50px;
+    padding-top: 5px;
+}
+
+.gaelcombat-itemtag span {
+    display: inline-flex;
+    font: 400 10px var(--titlefont);
+    color: rgb(var(--textcolor));
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgb(var(--devcolor) / 20%);
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    border-radius: 2px;
+    padding: 4px 10px 2px 10px;
+    width: fit-content;
+}
+
+.gaelcombat-spells {
+    display: block;
+    border: 1px solid rgb(var(--bordercolor)/70%);
+    height: 178px;
+    margin: 10px;
+    background: rgba(var(--bordercolor) / 5%);
+}
+
+.gaelcombat-spellbook {
+    display: grid;
+    line-height: 130%;
+    font: 16px var(--bodyserif);
+    color: rgb(var(--textcolor));
+    grid-template-columns: 460px;
+    grid-template-rows: 60px 118px;
+    grid-template-areas:
+        "gaelcombat-spellstop"
+        "gaelcombat-spellslist";
+}
+
+.gaelcombat-spellstop {
+    display: inline-grid;
+    grid-area: gaelcombat-spellstop;
+    grid-template-columns: 115px 115px 115px 115px;
+    border-bottom: 1px solid rgb(var(--bordercolor)/70%);
+    grid-template-row: 60px;
+    grid-template-areas:
+        "gaelspells-1st gaelspells-2nd gaelspells-3rd gaelspells-4th"
+}
+
+.gaelspells-1st,
+.gaelspells-2nd,
+.gaelspells-3rd {
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgb(var(--bordercolor)/70%);
+}
+
+.gaelspells-1st {
+    grid-area: gaelspells-1st;
+}
+
+.gaelspells-title1 {
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 100px;
+    margin-right: 5px;
+}
+
+.gaelspells-title2,
+.gaelspells-title3,
+.gaelspells-title4 {
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 90px;
+    margin-right: 5px;
+}
+
+.gaelspells-2nd {
+    grid-area: gaelspells-2nd;
+}
+
+.gaelspells-3rd {
+    grid-area: gaelspells-3rd;
+}
+
+.gaelspells-4th {
+    grid-area: gaelspells-4th;
+    display: flex;
+    justify-content: center;
+}
+
+.gaelspells-slots1,
+.gaelspells-slots2,
+.gaelspells-slots3,
+.gaelspells-slots4 {
+    gap: 8px;
+    display: flex;
+    font: 500 20px var(--titlefont);
+    padding-top: 27px;
+}
+
+.gaelspells-slots1 {
+    grid-area: gaelspells-1st;
+}
+
+.gaelspells-slots2 {
+    grid-area: gaelspells-2nd;
+}
+
+.gaelspells-slots3 {
+    grid-area: gaelspells-2nd;
+}
+
+.gaelspells-slots4 {
+    grid-area: gaelspells-4th;
+}
+
+.gaelspells-slotbox {
+    color: rgb(var(--highlightRGB));
+}
+
+#spellused {
+    color: rgb(var(--bordercolor)/70%);
+}
+
+.gaelcombat-spellsbottom {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+gaelspell {
+    display: flex;
+    align-items: center;
+    font: 500 14px var(--serif);
+    font-style: italic;
+    margin: 1px 15px 1px 0;
+}
+
+gaelspell:before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--highlight);
+    margin: 0 5px;
+}
+
+gaelspell>a:link,
+a:hover,
+a:visited,
+a:active {
+    color: rgb(var(--textcolor));
+    text-decoration: none;
+    transition: all ease 0.2s;
+}
