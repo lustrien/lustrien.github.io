@@ -334,6 +334,7 @@
 
 .gaelcombat-sp span {
     /*Text*/
+     display: inline-flex;
     background: rgb(var(--devcolor) / 30%);
     height: 18px;
     padding: 5px 5px 0px 5px;
