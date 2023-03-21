@@ -424,6 +424,14 @@
     --statusicon: url(https://img.nickpic.host/QIq9QQ.png);
 }
 
+#huntersmark {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/hunter's_mark_spell_baldursgate3_wiki_guide_150px_2.png);
+}
+
+#invisible {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/invisivility_spell_baldursgate3_wiki_guide_150px_2.png);
+}
+
 #off-balance {
     --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/off_balance_status_effect_icon_baldurs_gate3_guide_64px.png);
 }
@@ -443,6 +451,8 @@
 #threatened {
     --statusicon: url(https://img.nickpic.host/QIqutD.png);
 }
+
+
 
 /*Post Content*/
 .gaelcombat-post {
