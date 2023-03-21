@@ -2,18 +2,27 @@
     width: 620px !important;
     margin: 0px auto;
     border: 1px solid rgba(var(--bordercolor) / 70%);
-    --glacies: url(https://img.nickpic.host/6JmSR2.png);
     --jats: url(https://img.nickpic.host/CWTJdP.png);
     --flowers: url(https://i.ibb.co/JsYR8Cq/mem-search-bg.png);
     --namegradient: linear-gradient(30deg, var(--highlightRGB)),
         var(--highlighterRGB);
     --bagaccent: rgb(var(--highlightRGB));
-    --hollowing: url(https://img.nickpic.host/QoxFr8.png);
-    --hollowing2: url(https://img.nickpic.host/Qn2xP5.png);
+}
+
+#glacies {
+    --gaelbackground: url(https://img.nickpic.host/6JmSR2.png);
+}
+
+#hollowing {
+    --gaelbackground: url(https://img.nickpic.host/QoxFr8.png);
+}
+
+#hollowing2 {
+    --gaelbackground: url(https://img.nickpic.host/Qn2xP5.png);
 }
 
 .gaelcombat-header {
-    background: var(--hollowing);
+    background: var(--gaelbackground);
     background-size: cover;
     height: 160px;
     border-bottom: 1px solid rgba(var(--bordercolor));
