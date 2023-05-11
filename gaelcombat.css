@@ -10,15 +10,15 @@
 }
 
 #glacies {
-    --gaelbackground: url(https://img.nickpic.host/6JmSR2.png);
+    --gaelbackground: url(https://i1.lensdump.com/i/k1vLNC.png);
 }
 
 #hollowing {
-    --gaelbackground: url(https://img.nickpic.host/QoxFr8.png);
+    --gaelbackground: url(https://i2.lensdump.com/i/k1vmgH.png);
 }
 
 #hollowing2 {
-    --gaelbackground: url(https://img.nickpic.host/QMG208.png);
+    --gaelbackground: url(https://i3.lensdump.com/i/k1v9Ee.png);
 }
 
 .gaelcombat-header {
@@ -381,11 +381,11 @@
 /*Defining Conditions/Status Effects. Plug this ID into the HTML. */
 
 #bleeding {
-    --statusicon: url(https://img.nickpic.host/QIq2r2.png);
+    --statusicon: url(https://i1.lensdump.com/i/k1eVdM.png);
 }
 
 #burning {
-    --statusicon: url(https://img.nickpic.host/QIqP7m.png);
+    --statusicon: url(https://i2.lensdump.com/i/k1epPc.png);
 }
 
 #charmed {
@@ -401,7 +401,7 @@
 }
 
 #difficult-terrain {
-    --statusicon: url(https://img.nickpic.host/QIqNlJ.png);
+    --statusicon: url(https://i1.lensdump.com/i/k1eKK1.png);
 }
 
 #downed {
@@ -409,11 +409,11 @@
 }
 
 #frightened {
-    --statusicon: url(https://img.nickpic.host/QIqVMn.png);
+    --statusicon: url(https://i1.lensdump.com/i/k1elMP.png);
 }
 
 #gaping-wounds {
-    --statusicon: url(https://img.nickpic.host/QIqeVx.png);
+    --statusicon: url(https://i3.lensdump.com/i/k1edaa.png);
 }
 
 #hastened {
@@ -421,11 +421,11 @@
 }
 
 #hamstrung {
-    --statusicon: url(https://img.nickpic.host/QIq9QQ.png);
+    --statusicon: url(https://i2.lensdump.com/i/k1e9MQ.png);
 }
 
 #hunters-mark {
-    --statusicon: url(https://img.nickpic.host/QMItID.png);
+    --statusicon: url(https://i2.lensdump.com/i/k1ezhm.png);
 }
 
 #invisible {
@@ -437,7 +437,7 @@
 }
 
 #prone {
-    --statusicon: url(https://img.nickpic.host/QIqfks.png);
+    --statusicon: url(https://i.lensdump.com/i/k1esbx.png);
 }
 
 #sleeping {
@@ -449,7 +449,7 @@
 }
 
 #threatened {
-    --statusicon: url(https://img.nickpic.host/QIqutD.png);
+    --statusicon: url(https://i.lensdump.com/i/k1eOjK.png);
 }
 
 
