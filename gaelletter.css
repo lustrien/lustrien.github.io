@@ -3,7 +3,7 @@
     width: 250px;
     padding: 80px;
     text-align: justify;
-    font-family: 'elvish, 'amiri';
+    font-family: 'elvish', 'amiri';
     line-height: 160%;
     background: none;
     color: rgba(var(--textcolor));
@@ -13,7 +13,7 @@
 .gletter-to {
     font-family: var(--serifsubheader);
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 700;
     font-style: italic;
     text-transform: lowercase;
     padding-bottom: 20px;
