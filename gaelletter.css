@@ -17,7 +17,7 @@
     font-style: italic;
     text-transform: lowercase;
     padding-bottom: 20px;
-    color: var(--highlightRGB);
+    color: var(--highlight);
 }
 
 .gletter-sent {
@@ -28,7 +28,7 @@
     font-weight: 700;
     font-style: italic;
     text-transform: lowercase;
-    color: var(--highlightRGB);
+    color: var(--highlight);
 }
 
 #elvish {
