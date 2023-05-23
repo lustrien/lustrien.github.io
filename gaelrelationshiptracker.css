@@ -1,0 +1,153 @@
+.gaeltracker {
+  width: 600px;
+  border: 1px solid rgba(var(--bordercolor) / 70%);
+  background-color: rgba(var(--devcolor) / 10%);
+  padding: 20px;
+  --bgflower: url(https://i.ibb.co/5cqBcF3/mem-search-bg.png);
+}
+
+.gaeltracker-top {
+  border:solid 1px rgba(var(--bordercolor) / 70%);
+  background-image: var(--bgflower);
+  background-position: center;
+  padding:34px 25px 35px 34px;
+  text-align: left;
+}
+
+.gaeltracker-top h1 {
+  font:50px var(--displayfont);
+  font-weight: 600;
+  color: var(--highlight);
+  text-transform: uppercase;
+  line-height: 80%;
+  margin: 0px;
+}
+
+.gaeltracker-top span {
+  margin:0px;
+  font:500 14px var(--bodyserif);
+  line-height:10px;
+  letter-spacing:1px;
+  padding:0px 0px 0px 3px;
+  text-transform: lowercase;
+  font-style: italic;
+  color: rgb(var(--textcolor));
+}
+
+.gaeltracker-bulkwrap {
+  border: 1px solid rgba(var(--bordercolor) / 70%);
+  background-color: rgba(var(--devcolor) / 10%);
+  border-top: 0px;
+  padding: 20px;
+}
+
+.gaeltracker-bulk {
+  border: 1px solid rgba(var(--bordercolor) / 70%);
+  height: 300px;
+  overflow: auto;
+  padding: 20px;
+}
+
+.gaelrelate {
+   font:15px var(--bodyserif);
+   color: rgb(var(--textcolor));
+   line-height: 140%;
+   text-transform:none;
+   text-align:justify;
+   min-height:95px;
+   padding-bottom:20px;
+   padding-right:20px;
+}
+
+.gaelrelate-iconl {
+  height:80px;
+  width:80px;
+  padding:5px;
+  float:left;
+  border: solid 7px rgba(var(--bordercolor));
+  background: var(--icon);
+  background-size: cover;
+  margin:0px 15px 5px 0px; 
+}
+
+#calanwyn {
+  --icon: url('https://i3.lensdump.com/i/kXQBJM.png');
+}
+
+#cirilla {
+  --icon: url('https://i.lensdump.com/i/kXQvym.png');
+}
+
+#kaguya {
+  --icon: url('https://i2.lensdump.com/i/kXRrl0.png');
+}
+
+#isobelle {
+  --icon: url('https://i3.lensdump.com/i/kXRuM7.png');
+}
+
+#jackson {
+  --icon: url('https://i3.lensdump.com/i/kXQsxa.png');
+}
+
+#lileas {
+  --icon: url('https://i3.lensdump.com/i/kXrdlC.png');
+}
+
+#marrow {
+  --icon: url('https://i3.lensdump.com/i/kXZhoo.png');
+}
+
+#maxim {
+  --icon: url('https://i.lensdump.com/i/kXE65k.png');
+}
+
+#nuvinis {
+  --icon: url('https://i2.lensdump.com/i/kXQcnT.png');
+}
+
+#rel {
+  --icon: url('https://i1.lensdump.com/i/kXgDO5.png');
+}
+
+#solanssar {
+  --icon: url('https://i2.lensdump.com/i/kXVHXr.png');
+}
+
+#tagen {
+  --icon: url('https://i2.lensdump.com/i/kXVBDv.png');
+}
+
+#taliesin {
+  --icon: url('https://i3.lensdump.com/i/kXCGlr.png');
+}
+
+#tiamat {
+  --icon: url('https://i1.lensdump.com/i/kXQI0v.png');
+}
+
+#trissamran {
+  --icon: url('https://i2.lensdump.com/i/kXJ0LM.png');
+}
+
+#xishen {
+  --icon: url('https://i1.lensdump.com/i/kXQPuC.png');
+}
+
+.gaelrelate h1 {
+  margin:0px;
+  padding:0px;
+  font:800 28px var(--serif);
+  line-height:25px;
+  color: var(--highlight);
+  text-transform:uppercase;
+}
+
+.gaelrelate h2 { 
+   margin:0px;
+   padding:5px 0px 13px 0px;
+   font:700 12px var(--titlefont);
+   line-height:10px;
+   letter-spacing:1px;
+   text-transform:uppercase; 
+}
