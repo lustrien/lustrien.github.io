@@ -1,0 +1,45 @@
+.gaelprofile-wrap {
+    margin: 20px 20px 0px 20px;
+}
+
+.gaelprofile-feattitle {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 90%;
+    text-transform: uppercase;
+    background: linear-gradient( 55deg, rgba(var(--highlightRGB), 1) 0%, rgba(var(--highlighterRGB), 1) 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gaelprofile-tag {
+    display: inline;
+    font-family: var(--titlefont);
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    padding: 4px 10px 2px 10px;
+    background: linear-gradient( 55deg, rgba(var(--highlightRGB), .2) 0%, rgba(var(--highlighterRGB), .2) 100% );
+}
+
+.gaelprofile-featbody {
+    border: 0px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    text-align: justify;
+    line-height: 130%;
+    font-size: 16px;
+    font-family: 'Amiri';
+}
+
+.gaelprofile-block {
+    margin: 10px 0px 0px 30px;
+}
+
+.gaelprofile-wrap > span {
+    color: #474d83;
+    font-style: italic;
+}
