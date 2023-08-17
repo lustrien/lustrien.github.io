@@ -1,0 +1,103 @@
+.gaeldev-wrap {
+  position: relative;
+  width: 420px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding: 60px 60px 60px 60px;
+  background: rgba(var(--bordercolor) / 10%);
+  border-left: 10px solid;
+  border-image: linear-gradient(0deg, rgba(var(--highlightRGB),0.5) 0%, rgba(var(--highlighterRGB),0.8) 100% ) 1;
+  box-shadow: 0px 0px 10px 0px RGBA(var(--dark2RGB), 0.15);
+}
+
+.gaeldev {
+    font: 400 16px var(--bodyserif);
+    color: rgba(var(--textcolor));
+    line-height: 140%;
+    text-align: justify;
+}
+
+.gaeldev blockquote {
+  margin: 1.25em 0;
+}
+
+.gaeldev-credit {
+  padding-top: 20px;
+  font: 500 14px var(--bodyserif);
+  color: rgba(var(--textcolor));
+  line-height: 100%;
+  letter-spacing: 0.8px;
+}
+
+.gaeldev-credit span {
+  text-transform: uppercase;
+  font: 500 12px var(--titlefont);
+}
+
+.gaeldev-title {
+  margin-top: 30px;
+  font: 500 26px var(--bodyserif);
+  font-style: italic;
+  color: rgba(var(--highlighterRGB));
+  line-height: 100%;
+}
+
+.gaeldev-mood {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.gaeldev-mood img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid rgba(var(--textcolor));
+}
+
+.gaeldev-img2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 205px 205px;
+}
+
+.gaeldev-img2 img {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(var(--textcolor));
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+  transitions: 0.5s;
+}
+
+.gaeldev-img3 {
+  display: grid;
+  gap: 10px;  
+  grid-template-rows: auto;
+}
+
+.gaeldev-img3 img {
+  display: block;
+  width:100%;
+  border: 1px solid rgba(var(--textcolor));
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+  transitions: 0.5s;
+}
+
+.gaeldev-song {
+    display: inline-block;
+    background: url(https://i.imgur.com/vZn24lI.gif);
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    margin-right: 6px;
+    line-height: 120%;
+}
