@@ -24,7 +24,12 @@
     object-fit: cover;
     object-position: center;
     border: 1px solid rgba(var(--textcolor));
+    filter: grayscale(100%);
     transitions: 0.5s;
+}
+
+.gaeldev img:hover {
+  filter: none!important;
 }
 
 .gaeldev blockquote {
@@ -65,6 +70,7 @@
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
+    filter: none!important;
     border: 1px solid rgba(var(--textcolor));
 }
 
