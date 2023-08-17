@@ -24,7 +24,6 @@
     object-fit: cover;
     object-position: center;
     border: 1px solid rgba(var(--textcolor));
-    filter: grayscale(100%);
     transitions: 0.5s;
 }
 
