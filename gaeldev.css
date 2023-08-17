@@ -80,6 +80,10 @@
   grid-template-columns: 205px 205px;
 }
 
+.gaeldev-img2 img:hover {
+  filter: none!important;
+}
+
 .gaeldev-img2 img {
   display: block;
   width: 100%;
@@ -106,6 +110,10 @@
   object-position: center;
   filter: grayscale(100%);
   transitions: 0.5s;
+}
+
+.gaeldev-img3 img:hover {
+  filter: none!important;
 }
 
 .gaeldev-song {
