@@ -384,6 +384,10 @@
     --statusicon: url(https://i1.lensdump.com/i/k1eVdM.png);
 }
 
+#blessed {
+    --statusicon: url(https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/bless_spell_baldursgate3_wiki_guide_150px_2.png);
+}
+
 #burning {
     --statusicon: url(https://i2.lensdump.com/i/k1epPc.png);
 }
