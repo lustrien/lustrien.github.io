@@ -1,0 +1,128 @@
+.gaelcraftingwrap {
+  position: relative;
+  margin: 0px auto;
+  padding: 10px;
+  width: calc(100% - 14px);
+  border: 1px solid rgba(var(--bordercolor) / 70%);
+}
+  
+.gaelcraftingwrap, .gaelcraftingtop {
+  width: calc(100% - 132px);
+  margin: 0px 0px;
+  background-size:cover;
+  overflow: hidden;
+}
+
+.gaelcraftingtop {
+  border: 1px solid rgba(var(--bordercolor)/ 20%);
+  border-bottom: 0px;
+  background: rgba(var(--devcolor)/10%);
+  padding: 20px 65px 40px 65px;
+  line-height: 180%;
+}
+
+.gaelcraftingheader {
+  display: block;
+  text-align: center;
+}
+
+.gaelcraftingheader h1 {
+  font: 400 oblique 22px var(--serif);
+  color: rgba(var(--textcolor));
+  text-transform: none;
+  letter-spacing: 2px;
+}
+
+.gaelcraftingheader h2 {
+  margin-top:10px;
+  font: 400 10px var(--titlefont);
+  color: rgba(var(--textcolor));
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gaelcraftingbanner::before {
+  display: block;
+  content: '';
+  background: radial-gradient(transparent, #232322);
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 300px;  
+}
+
+.gaelcraftingbanner {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.gaelcraftinginv {
+  margin: 0px 0px;
+  width: calc(100% - 132px);
+  background: rgba(var(--devcolor) / 10%);
+  padding: 30px 65px 65px 65px;
+  line-height: 180%;
+}
+
+.gaelcraftinginv h1 {
+  display: block;
+  font: 500 18px var(--serif);
+  color: rgba(var(--textcolor));
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+
+.gaelcraftinginv h2 {
+  display: block;
+  font: 400 10px var(--titlefont);
+  color: rgba(var(--textcolor));
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gaelcrafting-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.gaelcrafting-itemwrap {
+  border: 1px solid rgba(var(--bordercolor)/30%);
+  padding: 10px;
+}
+
+
+.gaelcrafting-item {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 40px;
+  width: 40px; 
+  padding: 10px;
+  background: var(--itemicon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+}
+
+#leatherworking {
+  --itemicon: url('https://baldursgate3.wiki.fextralife.com/file/Baldurs-Gate-3/trap_disarm_toolkit_tools_baldursgate3_wiki_guide_150px.png');
+}
+
+#herbalism {
+  --itemicon: url('https://b.l3n.co/i/Ql3SJr.png');
+}
+
+.gaelcrafting-section span {
+  display: block;
+  font: 500 16px var(--bodyserif);
+  color: rgba(var(--textcolor));
+}
